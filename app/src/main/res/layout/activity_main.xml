@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+
+    >
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:textSize="24dp"
+        android:textColorHint="@color/purple_500"
+        />
+
+    <EditText
+        android:id="@+id/txtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:hint="Номер телефона"
+        android:inputType="number"
+        android:textSize="24dp"
+        android:textColorHint="@color/purple_500"
+        />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumber"
+        android:hint="Дата рождения"
+        android:inputType="number"
+        android:textColorHint="@color/purple_500"
+        android:textSize="24dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDate"
+        android:layout_marginTop="26dp"
+        android:background="@color/purple_500"
+        android:text="Добавить"
+        android:textColor="@color/white"
+        android:textSize="21dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInsert"
+        android:background="@color/purple_500"
+        android:text="Изменить"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:background="@color/purple_500"
+        android:text="Удалить"
+        android:textColor="@color/white"
+        android:textSize="21dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:text="Посмотреть все данные"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:textSize="21dp" />
+
+</RelativeLayout>
